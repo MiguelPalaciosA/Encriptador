@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+   box-sizing: border-box;
+   background-color: #F3F5FC;
+   margin: 0px;
+ 
+}
+
+.imagenHead {
+   padding: 0px 0px 0px 0px;
+   width: 120px;
+   height: 48px;
+
+
+}
+
+.posicion {
+   display: flex;
+   justify-content: space-around;
+   padding-top: 40px;
+
+
+}
+
+
+
+.texto {
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+
+}
+
+
+textarea::placeholder {
+   color: #0A3871;
+   font-size: 2rem;
+   font-family: "inter";
+   width: 577px;
+   height: 48px;
+}
+
+.texto_usuario {
+   padding: 128px 40px 520px 240px;
+   color: #0A3871;
+   font-size: 2rem;
+   font-family: "inter";
+   width: 677px;
+   height: 48px;
+   border: 0px;
+   background-color: #F3F5FC;
+   outline: none;
+
+}
+
+.informacion {
+   display: flex;
+   font-size: 0.75rem;
+   font-weight: 400;
+   color: #495057;
+   padding: 0px 0px 0px 240px;
+   width: 205px;
+   height: 18px;
+   gap: 18px;
+
+}
+
+
+.contenido_boton_1 {
+   font-size: 1rem;
+   background-color: #0A3871;
+   color: #FFFFFF;
+   border-radius: 24px;
+   width: 328px;
+   height: 67px;
+   font-family: "inter";
+
+}
+
+.contenido_boton_1:hover {
+   background-color: blue;
+}
+
+.contenido_boton_2 {
+   font-size: 1rem;
+   background-color: #D8DFE8;
+   color: #0A3871;
+   border-radius: 24px;
+   width: 328px;
+   height: 67px;
+   font-family: "inter";
+
+}
+
+.contenido_boton_2:hover {
+   background-color: blue;
+}
+
+.box {
+   display: flex;
+   flex-direction: row;
+   padding: 0px 0px 20px 240px;
+   gap: 24px;
+}
+
+.imagen {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   overflow-x: hidden;
+   word-wrap: break-word;
+   background-color: #FFFFFF;
+   height: 844px;
+   width: 400px;
+   border-radius: 32px;
+   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dibujo {
+
+   align-self: center;
+   padding: 211px 32px 0px 0px;
+}
+
+.mensaje_error {
+   display: flex;
+   align-self: center;
+   text-align: center;
+   padding: 0px 32px 0px 32px;
+   font-family: "inter";
+   font-size: 1.5rem;
+   color: #343A40;
+}
+
+.parrafo {
+   display: flex;
+   align-self: center;
+   padding: 0px 32px 0px 32px;
+   text-align: center;
+   font-family: "inter";
+   font-size: 1rem;
+   color: #495057;
+}
+
+
+.contenido_boton_3 {
+   font-size: 1rem;
+   background-color: #0A3871;
+   color: #FFFFFF;
+   border-radius: 24px;
+   width: 328px;
+   height: 67px;
+   font-family: "inter";
+
+}
+
+.contenido_boton_3:hover {
+   background-color: blue;
+}
+
+.caja_copiar {
+   position: absolute;
+   top: 743px;
+   left: 32px;
+   bottom: 32px;
+   right: 32px;
+}
+
+.traspaso {
+   text-align: center;
+   font-family: "inter";
+   color: #0A3871;
+   font-size: 2rem;
+   padding: 32px 32px 0px 32px;
+}
+.pie{
+text-align: center;
+padding-top: 20px;
+}
+
+
+
+/*Tablet*/
+@media only screen and (max-width: 1200px) {
+   .imagenHead {
+      padding: 0px;
+      transform: translate(-320px, 40px);
+
+   }
+
+   .texto_usuario {
+      flex-direction: column-reverse;
+      transform: translate(0x, 152px);
+      padding: 5px 0px 0px 16px;
+      width: 80vw;
+      height: 40vh;
+      align-items: center;
+      display: flex;
+
+   }
+
+
+   .box {
+      padding: 0px;
+      align-items: center;
+      justify-content: space-between;
+      width: 90vw;
+   }
+
+   .informacion {
+      justify-content: flex-start;
+      margin-top: 100px;
+      padding: 0px 0px 0px 0px;
+      height: 18px;
+      gap: 0px;
+   }
+
+   .imagen {
+      padding: 0px;
+      height: 186px;
+      width: 90vw;
+      display: flex;
+
+
+   }
+
+   .posicion {
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+   }
+
+   .dibujo {
+      display: none;
+   }
+
+   .parrafo {
+      padding: 0px;
+      justify-content: center;
+   }
+
+   .mensaje_error {
+      padding: 0px;
+      justify-content: center;
+   }
+
+   .caja_copiar {
+      position: relative;
+      top: auto;
+      left: auto;
+      bottom: auto;
+      right: auto;
+      margin-left: 190px;
+   }
+
+}
+
+/*telefono*/
+@media only screen and (max-width: 600px) {
+   .imagenHead {
+      padding: 0px;
+      transform: translate(-160px, 20px);
+
+   }
+
+   .box {
+      flex-direction: column;
+   }
+
+   .texto_usuario {
+      height: 30vh;
+   }
+
+   .informacion {
+      padding: 0px 0px 0px 18px;
+      gap: 8px;
+      margin: 0px;
+   }
+
+   .caja_copiar {
+      position: relative;
+      top: auto;
+      left: auto;
+      bottom: auto;
+      right: auto;
+      margin-left: 12px;
+   }
+}
